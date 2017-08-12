@@ -20,7 +20,7 @@ and Progress bar boxes:
 
 # Usage
 
-##This script is not standalone, it requires the actual GUI object structure 
+## This script is not standalone, it requires the actual GUI object structure 
 that would be the child to the script object.
 
 ---
@@ -29,7 +29,7 @@ All module scripts are imported with the `require(src)` method:
 
 `gui = require(workspace["ETB:DialogsModule2"])`
 
-###To create a Text response box:
+### To create a Text response box:
 
 Set a local variable equal to the method `gui.popDialog_TextEntry(windowName, promptText, color, defaultText)`
 
@@ -37,7 +37,7 @@ The method returns a string value equal to the text entered into the box when th
 
 `local response = gui.popDialog_TextEntry("Enter name", "Enter name:", gui.Colors.Yellow, "Mittens"])`
 
-###To create a confirmation box:
+### To create a confirmation box:
 
 Set a local variable equal to the method `gui.popDialog_YesNo(windowName, "promptText", color)`
 
@@ -45,7 +45,7 @@ Set a local variable equal to the method `gui.popDialog_YesNo(windowName, "promp
 
 The method returns an integer value either 1, 0, or -99, 1 for yes, 0 for no, -99 for window close.
 
-###To create a Progress bar box:
+### To create a Progress bar box:
 
 We need to create a reference variable in LUA. To do so, we can create a table and use the value
 inside the table as the reference variable because LUA treats tables as reference objects.
