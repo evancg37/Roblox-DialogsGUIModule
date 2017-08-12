@@ -20,8 +20,7 @@ and Progress bar boxes:
 
 # Usage
 
-## This script is not standalone, it requires the actual GUI object structure 
-that would be the child to the script object.
+#### This script is not standalone, it requires the actual GUI object structure that would be the child to the script object.
 
 ---
 
