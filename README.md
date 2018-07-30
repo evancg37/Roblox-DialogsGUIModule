@@ -28,23 +28,20 @@ All module scripts are imported with the `require(src)` method:
 
 `gui = require(workspace["ETB:DialogsModule2"])`
 
-### To create a Text response box:
+### To display a Text response box:
 
-`dialog = gui.createDialog_TextEntry(windowName, promptText, color, defaultText)`
 
-For quicker use, the popDialog_TextEntry method returns a string value equal to the text entered into the box when the window is closed.
+The popDialog_TextEntry method returns a string value equal to the text entered into the box when the window is closed.
 
 `local input = gui.popDialog_TextEntry("Gimme", "Enter a name for the new cat:", gui.Colors.Yellow, "Mittens")`
 
-### To create a confirmation box:
+### To display a confirmation box:
 
-`dialog = gui.createDialog_YesNo(windowName, promptText, color)`
-
-For quicker use, the popDialog_YesNo method returns an integer value either 1, 0, or -99, 1 for yes, 0 for no, -99 for window close.
+The popDialog_YesNo method returns an integer value either 1, 0, or -99, 1 for yes, 0 for no, -99 for window close.
 
 `local choice = gui.popDialog_YesNo("Check", "Are you sure: Mittens?", gui.Colors.Red)`
 
-### To create a Progress bar box:
+### To display a Progress bar box:
 
 We need to create a reference variable in LUA. To do so, we can create a table and use the value
 inside the table as the reference variable because LUA treats tables as reference objects.
