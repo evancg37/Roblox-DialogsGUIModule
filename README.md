@@ -30,26 +30,24 @@ All module scripts are imported with the `require(src)` method:
 
 ### To create a Text response box:
 
-Set a local variable equal to the method `gui.popDialog_TextEntry(windowName, promptText, color, defaultText)`
+`dialog = gui.createDialog_TextEntry(windowName, promptText, color, defaultText)`
 
-The method returns a string value equal to the text entered into the box when the window is closed.
+For quicker use, the popDialog_TextEntry method returns a string value equal to the text entered into the box when the window is closed.
 
-`local response = gui.popDialog_TextEntry("Enter name", "Enter name:", gui.Colors.Yellow, "Mittens"])`
+`local input = gui.popDialog_TextEntry("Gimme", "Enter a name for the new cat:", gui.Colors.Yellow, "Mittens")`
 
 ### To create a confirmation box:
 
-Set a local variable equal to the method `gui.popDialog_YesNo(windowName, "promptText", color)`
+`dialog = gui.createDialog_YesNo(windowName, "promptText", color)`
+
+For quicker use, the popDialog_YesNo method returns an integer value either 1, 0, or -99, 1 for yes, 0 for no, -99 for window close.
 
 `local choice = gui.popDialog_YesNo("Check", "Are you sure: Mittens?", gui.Colors.Red)`
-
-The method returns an integer value either 1, 0, or -99, 1 for yes, 0 for no, -99 for window close.
 
 ### To create a Progress bar box:
 
 We need to create a reference variable in LUA. To do so, we can create a table and use the value
 inside the table as the reference variable because LUA treats tables as reference objects.
-
-Then call the method `gui.popDialog_Progress(windowName, description, color, table)`
 
 ```
 local float = {0.0}
