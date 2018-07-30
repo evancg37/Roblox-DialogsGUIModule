@@ -48,7 +48,7 @@ inside the table as the reference variable because LUA treats tables as referenc
 
 ```
 local float = {0.0}
-gui.popDialog_Progress("Loading", "Spawning cat Mittens...", gui.Colors.Blue, float)
+gui.popDialog_Progress("Loading", "Spawning cat named Mittens...", gui.Colors.Blue, float)
 ```
 
 The progress bar automatically updates based on the value of the reference table value `table[1]` from 0.00 to 1.00.
