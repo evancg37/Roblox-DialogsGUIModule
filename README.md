@@ -39,7 +39,7 @@ The popDialog_TextEntry method returns a string value equal to the text entered 
 
 The popDialog_YesNo method returns an integer value either 1, 0, or -99, 1 for yes, 0 for no, -99 for window close.
 
-`local choice = gui.popDialog_YesNo("Check", "Are you sure: Mittens?", gui.Colors.Red)`
+`local choice = gui.popDialog_YesNo("Check", "Are you sure you want to name the cat Mittens?", gui.Colors.Red)`
 
 ### To display a Progress bar box:
 
