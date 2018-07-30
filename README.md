@@ -20,7 +20,7 @@ and Progress bar boxes:
 
 # Usage
 
-#### This script is not standalone, it requires the actual GUI object structure that would be the child to the script object, which is not provided.
+#### This script is not not intended to be cloned and is therefore not standalone, it requires the actual GUI object structure that would be the child to the script object wich is not provided.
 
 ---
 
@@ -38,7 +38,7 @@ For quicker use, the popDialog_TextEntry method returns a string value equal to 
 
 ### To create a confirmation box:
 
-`dialog = gui.createDialog_YesNo(windowName, "promptText", color)`
+`dialog = gui.createDialog_YesNo(windowName, promptText, color)`
 
 For quicker use, the popDialog_YesNo method returns an integer value either 1, 0, or -99, 1 for yes, 0 for no, -99 for window close.
 
